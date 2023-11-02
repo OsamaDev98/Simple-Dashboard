@@ -1,186 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Osama Plans</title>
     <!-- Icons File -->
-    <link rel="stylesheet" href="./all.min.css">
+    <link rel="stylesheet" href="./all.min.css" />
     <!-- TailwindCSS File -->
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body class="font-fontbody grid grid-cols-12 bg-slate-100">
-
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="font-fontbody grid grid-cols-12 bg-slate-100">
     <header class="grid col-span-2 content-start bg-white shadow-xl z-10">
-        <h1 class="logo">osama</h1>
-        <div class="text-center my-[3rem] text-xl capitalize px-4 sm:px-2 min-h-screen">
-            <a href="./dashboard.html" class="a"><i class="fa-solid fa-chart-bar fa-fw ml-2"></i><span class="sidebar-mobile ml-2">dashboard</span></a>
-            <a href="./settings.html" class="a"><i class="fa-solid fa-gear fa-fw ml-2"></i><span class="sidebar-mobile ml-2">settings</span></a>
-            <a href="./profile.html" class="a"><i class="fa-regular fa-user fa-fw ml-2"></i><span class="sidebar-mobile ml-2">profile</span></a>
-            <a href="./projects.html" class="a"><i class="fa-solid fa-diagram-project fa-fw ml-2"></i><span class="sidebar-mobile ml-2">projects</span></a>
-            <a href="./courses.html" class="a"><i class="fa-solid fa-graduation-cap fa-fw ml-2"></i><span class="sidebar-mobile ml-2">courses</span></a>
-            <a href="./friends.html" class="a"><i class="fa-solid fa-user-group fa-fw ml-2"></i><span class="sidebar-mobile ml-2">friends</span></a>
-            <a href="./files.html" class="a"><i class="fa-regular fa-file fa-fw ml-2"></i><span class="sidebar-mobile ml-2">files</span></a>
-            <a href="./plans.html" class="a active"><i class="fa-solid fa-pager fa-fw ml-2"></i><span class="sidebar-mobile ml-2">plans</span></a>
-        </div>
+      <h1 class="logo">osama</h1>
+      <div
+        class="text-center my-[3rem] text-xl capitalize px-4 sm:px-2 min-h-screen"
+      >
+        <a href="./index.html" class="a"
+          ><i class="fa-solid fa-chart-bar fa-fw ml-2"></i
+          ><span class="sidebar-mobile ml-2">dashboard</span></a
+        >
+        <a href="./settings.html" class="a"
+          ><i class="fa-solid fa-gear fa-fw ml-2"></i
+          ><span class="sidebar-mobile ml-2">settings</span></a
+        >
+        <a href="./profile.html" class="a"
+          ><i class="fa-regular fa-user fa-fw ml-2"></i
+          ><span class="sidebar-mobile ml-2">profile</span></a
+        >
+        <a href="./projects.html" class="a"
+          ><i class="fa-solid fa-diagram-project fa-fw ml-2"></i
+          ><span class="sidebar-mobile ml-2">projects</span></a
+        >
+        <a href="./courses.html" class="a"
+          ><i class="fa-solid fa-graduation-cap fa-fw ml-2"></i
+          ><span class="sidebar-mobile ml-2">courses</span></a
+        >
+        <a href="./friends.html" class="a"
+          ><i class="fa-solid fa-user-group fa-fw ml-2"></i
+          ><span class="sidebar-mobile ml-2">friends</span></a
+        >
+        <a href="./files.html" class="a"
+          ><i class="fa-regular fa-file fa-fw ml-2"></i
+          ><span class="sidebar-mobile ml-2">files</span></a
+        >
+        <a href="./plans.html" class="a active"
+          ><i class="fa-solid fa-pager fa-fw ml-2"></i
+          ><span class="sidebar-mobile ml-2">plans</span></a
+        >
+      </div>
     </header>
 
-    
-<section class="main-section p-4 col-start-3 col-span-10" >
-    
-    <header class="bg-white flex items-center justify-between h-[5rem] px-[1rem] -m-4">
-        <input type="search" placeholder="type a keyword" class="rounded-xl placeholder:capitalize pl-12 border-gray-300 relative">
+    <section class="main-section p-4 col-start-3 col-span-10">
+      <header
+        class="bg-white flex items-center justify-between h-[5rem] px-[1rem] -m-4"
+      >
+        <input
+          type="search"
+          placeholder="type a keyword"
+          class="rounded-xl placeholder:capitalize pl-12 border-gray-300 relative"
+        />
         <i class="fa-solid fa-magnifying-glass absolute px-4 text-gray-400"></i>
-        <div class="flex items-center justify-center relative before:content-[''] before:absolute before:w-[10px] before:h-[10px] before:bg-red-600 before:rounded-full before:top-0 before:left-[5px]">
-            <i class="fa-solid fa-bell mr-3"></i>
-            <img src="../image/avatar-01.png" class="h-[30px] w-[30px] rounded-full" alt="">
+        <div
+          class="flex items-center justify-center relative before:content-[''] before:absolute before:w-[10px] before:h-[10px] before:bg-red-600 before:rounded-full before:top-0 before:left-[5px]"
+        >
+          <i class="fa-solid fa-bell mr-3"></i>
+          <img
+            src="../image/avatar-01.png"
+            class="h-[30px] w-[30px] rounded-full"
+            alt=""
+          />
         </div>
-    </header>
+      </header>
 
-    <div class="section-1 mt-8">
-        <h1 class="head-page before:w-[calc(100%_-_1rem)] after:w-[1.5rem]">plans</h1>
-    </div>
-    <div class="grid-plans mt-8">
+      <div class="section-1 mt-8">
+        <h1 class="head-page before:w-[calc(100%_-_1rem)] after:w-[1.5rem]">
+          plans
+        </h1>
+      </div>
+      <div class="grid-plans mt-8">
         <div class="card">
-            <div class="plans">
-                <h1 class="text-2xl font-bold">free</h1>
-                <p class="text-4xl"><sup class="mr-1 text-xl">$</sup><span>0.00</span></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4 mt-2">
-                <p><i class="fa-solid fa-check text-green-400 mr-3"></i><span>access all text lessons</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-check text-green-400 mr-3"></i><span>access all videos lessons</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-check text-green-400 mr-3"></i><span>arrear on leaderboard</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-xmark text-red-400 mr-3"></i><span>browse content without ads</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-xmark text-red-400 mr-3"></i><span>access all assignments</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-xmark text-red-400 mr-3"></i><span>get daily prizes</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-xmark text-red-400 mr-3"></i><span>earn certificate</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-xmark text-red-400 mr-3"></i><span>1 GB space for hosting files</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-xmark text-red-400 mr-3"></i><span>access badge system</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="mt-4">
-                <a href="#" class="text-white bg-green-500 rounded-lg px-3">join</a>
-            </div>
-        </div>
-
-        <div class="card">
-            <div class="plans bg-blue-500 border-blue-500">
-                <h1 class="text-2xl font-bold">basic</h1>
-                <p class="text-4xl"><sup class="mr-1 text-xl">$</sup><span>7.99</span></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4 mt-2">
-                <p><i class="fa-solid fa-check text-green-400 mr-3"></i><span>access all text lessons</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-check text-green-400 mr-3"></i><span>access all videos lessons</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-check text-green-400 mr-3"></i><span>arrear on leaderboard</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-check text-green-400 mr-3"></i><span>browse content without ads</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-check text-green-400 mr-3"></i><span>access all assignments</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-check text-green-400 mr-3"></i><span>get daily prizes</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-check text-green-400 mr-3"></i><span>earn certificate</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-xmark text-red-400 mr-3"></i><span>1 GB space for hosting files</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-xmark text-red-400 mr-3"></i><span>access badge system</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="mt-4">
-                <a href="#" class="text-white bg-blue-500 rounded-lg px-3">join</a>
-            </div>
+          <div class="plans">
+            <h1 class="text-2xl font-bold">free</h1>
+            <p class="text-4xl">
+              <sup class="mr-1 text-xl">$</sup><span>0.00</span>
+            </p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4 mt-2">
+            <p>
+              <i class="fa-solid fa-check text-green-400 mr-3"></i
+              ><span>access all text lessons</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-check text-green-400 mr-3"></i
+              ><span>access all videos lessons</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-check text-green-400 mr-3"></i
+              ><span>arrear on leaderboard</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-xmark text-red-400 mr-3"></i
+              ><span>browse content without ads</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-xmark text-red-400 mr-3"></i
+              ><span>access all assignments</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-xmark text-red-400 mr-3"></i
+              ><span>get daily prizes</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-xmark text-red-400 mr-3"></i
+              ><span>earn certificate</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-xmark text-red-400 mr-3"></i
+              ><span>1 GB space for hosting files</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-xmark text-red-400 mr-3"></i
+              ><span>access badge system</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="mt-4">
+            <a href="#" class="text-white bg-green-500 rounded-lg px-3">join</a>
+          </div>
         </div>
 
         <div class="card">
-            <div class="plans bg-orange-400 border-orange-400">
-                <h1 class="text-2xl font-bold">premium</h1>
-                <p class="text-4xl"><sup class="mr-1 text-xl">$</sup><span>19.99</span></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4 mt-2">
-                <p><i class="fa-solid fa-check text-green-400 mr-3"></i><span>access all text lessons</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-check text-green-400 mr-3"></i><span>access all videos lessons</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-check text-green-400 mr-3"></i><span>arrear on leaderboard</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-check text-green-400 mr-3"></i><span>browse content without ads</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-check text-green-400 mr-3"></i><span>access all assignments</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-check text-green-400 mr-3"></i><span>get daily prizes</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-check text-green-400 mr-3"></i><span>earn certificate</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-check text-green-400 mr-3"></i><span>1 GB space for hosting files</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="flex items-center justify-between border-b py-4">
-                <p><i class="fa-solid fa-check text-green-400 mr-3"></i><span>access badge system</span></p>
-                <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
-            </div>
-            <div class="mt-4">
-                <p class="text-gray-400 text-center">this is your current plan</p>
-            </div>
+          <div class="plans bg-blue-500 border-blue-500">
+            <h1 class="text-2xl font-bold">basic</h1>
+            <p class="text-4xl">
+              <sup class="mr-1 text-xl">$</sup><span>7.99</span>
+            </p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4 mt-2">
+            <p>
+              <i class="fa-solid fa-check text-green-400 mr-3"></i
+              ><span>access all text lessons</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-check text-green-400 mr-3"></i
+              ><span>access all videos lessons</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-check text-green-400 mr-3"></i
+              ><span>arrear on leaderboard</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-check text-green-400 mr-3"></i
+              ><span>browse content without ads</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-check text-green-400 mr-3"></i
+              ><span>access all assignments</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-check text-green-400 mr-3"></i
+              ><span>get daily prizes</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-check text-green-400 mr-3"></i
+              ><span>earn certificate</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-xmark text-red-400 mr-3"></i
+              ><span>1 GB space for hosting files</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-xmark text-red-400 mr-3"></i
+              ><span>access badge system</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="mt-4">
+            <a href="#" class="text-white bg-blue-500 rounded-lg px-3">join</a>
+          </div>
         </div>
-    </div>
-</section>
-</body>
+
+        <div class="card">
+          <div class="plans bg-orange-400 border-orange-400">
+            <h1 class="text-2xl font-bold">premium</h1>
+            <p class="text-4xl">
+              <sup class="mr-1 text-xl">$</sup><span>19.99</span>
+            </p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4 mt-2">
+            <p>
+              <i class="fa-solid fa-check text-green-400 mr-3"></i
+              ><span>access all text lessons</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-check text-green-400 mr-3"></i
+              ><span>access all videos lessons</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-check text-green-400 mr-3"></i
+              ><span>arrear on leaderboard</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-check text-green-400 mr-3"></i
+              ><span>browse content without ads</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-check text-green-400 mr-3"></i
+              ><span>access all assignments</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-check text-green-400 mr-3"></i
+              ><span>get daily prizes</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-check text-green-400 mr-3"></i
+              ><span>earn certificate</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-check text-green-400 mr-3"></i
+              ><span>1 GB space for hosting files</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="flex items-center justify-between border-b py-4">
+            <p>
+              <i class="fa-solid fa-check text-green-400 mr-3"></i
+              ><span>access badge system</span>
+            </p>
+            <p><i class="fa-solid fa-circle-info text-gray-400"></i></p>
+          </div>
+          <div class="mt-4">
+            <p class="text-gray-400 text-center">this is your current plan</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
-
