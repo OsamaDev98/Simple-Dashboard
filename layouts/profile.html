@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osama Profile</title>
+    <!-- Icons File -->
+    <link rel="stylesheet" href="./all.min.css">
+    <!-- TailwindCSS File -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-fontbody grid grid-cols-12 bg-slate-100">
+
+    <header class="grid col-span-2 content-start bg-white shadow-xl z-10">
+        <h1 class="logo">osama</h1>
+        <div class="text-center my-[3rem] text-xl capitalize px-4 sm:px-2">
+            <a href="./dashboard.html" class="a"><i class="fa-solid fa-chart-bar fa-fw ml-2"></i><span class="sidebar-mobile ml-2">dashboard</span></a>
+            <a href="./settings.html" class="a"><i class="fa-solid fa-gear fa-fw ml-2"></i><span class="sidebar-mobile ml-2">settings</span></a>
+            <a href="./profile.html" class="a active"><i class="fa-regular fa-user fa-fw ml-2"></i><span class="sidebar-mobile ml-2">profile</span></a>
+            <a href="./projects.html" class="a"><i class="fa-solid fa-diagram-project fa-fw ml-2"></i><span class="sidebar-mobile ml-2">projects</span></a>
+            <a href="./courses.html" class="a"><i class="fa-solid fa-graduation-cap fa-fw ml-2"></i><span class="sidebar-mobile ml-2">courses</span></a>
+            <a href="./friends.html" class="a"><i class="fa-solid fa-user-group fa-fw ml-2"></i><span class="sidebar-mobile ml-2">friends</span></a>
+            <a href="./files.html" class="a"><i class="fa-regular fa-file fa-fw ml-2"></i><span class="sidebar-mobile ml-2">files</span></a>
+            <a href="./plans.html" class="a"><i class="fa-solid fa-pager fa-fw ml-2"></i><span class="sidebar-mobile ml-2">plans</span></a>
+        </div>
+    </header>
+
+    
+<section class="main-section p-4 col-start-3 col-span-10" >
+    
+    <header class="bg-white flex items-center justify-between h-[5rem] px-[1rem] -m-4">
+        <input type="search" placeholder="type a keyword" class="rounded-xl placeholder:capitalize pl-12 border-gray-300 relative">
+        <i class="fa-solid fa-magnifying-glass absolute px-4 text-gray-400"></i>
+        <div class="flex items-center justify-center relative before:content-[''] before:absolute before:w-[10px] before:h-[10px] before:bg-red-600 before:rounded-full before:top-0 before:left-[5px]">
+            <i class="fa-solid fa-bell mr-3"></i>
+            <img src="../image/avatar-01.png" class="h-[30px] w-[30px] rounded-full" alt="">
+        </div>
+    </header>
+
+    <div class="section-1 mt-8">
+        <h1 class="head-page">profile</h1>
+    </div>
+
+    <div class="section-2 my-8 overflow-x-auto bg-white rounded-xl">
+        <table class="capitalize my-8 text-start min-w-[1200px]">
+            <tbody class="p-4">
+                <tr>
+                    <td rowspan="5" class="text-center px-10 border-r">
+                            <img src="../image/avatar-03.png" alt="image" class="rounded-full w-[200px] mx-auto">
+                            <h1 class="head-card my-2">osama dev</h1>
+                            <p class="text-gray-400">level 20</p>
+                            <div class="w-[60%] h-[5px] rounded-xl bg-gray-200 mt-2 relative left-[50%] translate-x-[-50%]">
+                                <span class="block w-[80%] h-full bg-blue-600 rounded-xl"></span>
+                            </div>
+                            <div class="text-orange-500 my-2">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="text-gray-400">550 rating</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pr-8 pl-4">
+                        <p class="text-gray-400">general information</p>
+                        <p class="text-gray-400">full name: <span class="text-black">osama gad</span></p>
+                     </td>
+                    <td>
+                        <p class="text-gray-400 w-fit">general: <span class="text-black">male</span></p>
+                    </td>
+                    <td>
+                        <p class="text-gray-400">country: <span class="text-black">egypt</span></p>
+                    </td>
+                    <td>
+                        <div class="check-btn w-[100px] h-[25px] after:w-[15px] after:h-[15px]"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pr-8 pl-4">
+                        <p class="text-gray-400">personal information</p>
+                        <p class="text-gray-400">email: <span class="text-black">osa@email.sa</span></p>
+                    </td>
+                    <td>
+                        <p class="text-gray-400">phone: <span class="text-black">0101111111</span></p>
+                    </td>
+                    <td>
+                        <p class="text-gray-400">date of birth: <span class="text-black">25/10/1998</span></p>
+                    </td>
+                    <td>
+                        <div class="check-btn w-[100px] h-[25px] after:w-[15px] after:h-[15px] bg-gray-200 after:left-1"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pr-8 pl-4">
+                        <p class="text-gray-400">job information</p>
+                        <p class="text-gray-400">title: <span class="text-black">frontend developer</span></p>
+                    </td>
+                    <td>
+                        <p class="text-gray-400">programming language: <span class="text-black">python</span></p>
+                    </td>
+                    <td>
+                        <p class="text-gray-400">years of experience: <span class="text-black">1+</span></p>
+                    </td>
+                    <td>
+                        <div class="check-btn w-[100px] h-[25px] after:w-[15px] after:h-[15px]"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pr-8 pl-4">
+                        <p class="text-gray-400">billing information</p>
+                        <p class="text-gray-400">payment method: <span class="text-black">paypal</span></p>
+                    </td>
+                    <td>
+                        <p class="text-gray-400">email: <span class="text-black">email@mail.com</span></p>
+                    </td>
+                    <td>
+                        <p class="text-gray-400">subscription: <span class="text-black">monthly</span></p>
+                    </td>
+                    <td>
+                        <div class="check-btn w-[100px] h-[25px] after:w-[15px] after:h-[15px] bg-gray-200 after:left-1"></div>
+                    </td>
+                    </div>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section-3 grid-profile">
+        <div class="card">
+            <h1 class="head-card">my skills</h1>
+            <p class="text-gray-400 pt-2 mb-6">complete skills list</p>
+            <div class="border-b pb-4 flex gap-2">
+                <p class="bg-gray-200 py-1 px-2 rounded-lg">HTML</p>
+                <p class="bg-gray-200 py-1 px-2 rounded-lg">pugis</p>
+                <p class="bg-gray-200 py-1 px-2 rounded-lg">HAML</p>
+            </div>
+
+            <div class="border-b py-4 flex gap-2">
+                <p class="bg-gray-200 py-1 px-2 rounded-lg">CSS</p>
+                <p class="bg-gray-200 py-1 px-2 rounded-lg">SASS</p>
+                <p class="bg-gray-200 py-1 px-2 rounded-lg">Stylus</p>
+            </div>
+
+            <div class="border-b py-4 flex gap-2">
+                <p class="bg-gray-200 py-1 px-2 rounded-lg">javaScript</p>
+                <p class="bg-gray-200 py-1 px-2 rounded-lg">TypeScript</p>
+            </div>
+
+            <div class="border-b py-4 flex gap-2">
+                <p class="bg-gray-200 py-1 px-2 rounded-lg">vuejs</p>
+                <p class="bg-gray-200 py-1 px-2 rounded-lg">reactjs</p>
+            </div>
+
+            <div class="border-b py-4 flex gap-2">
+                <p class="bg-gray-200 py-1 px-2 rounded-lg">jest</p>
+                <p class="bg-gray-200 py-1 px-2 rounded-lg">jasmine</p>
+            </div>
+
+            <div class="border-b py-4 flex gap-2">
+                <p class="bg-gray-200 py-1 px-2 rounded-lg">PHP</p>
+                <p class="bg-gray-200 py-1 px-2 rounded-lg">laravel</p>
+            </div>
+
+            <div class="py-4 flex gap-2">
+                <p class="bg-gray-200 py-1 px-2 rounded-lg">python</p>
+                <p class="bg-gray-200 py-1 px-2 rounded-lg">django</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h1 class="head-card">lastest activities</h1>
+            <p class="text-gray-400 pt-2 pb-4">lastest activities done by the user</p>
+            <div class="border-b py-4 flex items-center justify-between">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-store rounded-full p-4 bg-rose-700 text-white text-xl mr-2"></i>
+                    <div>
+                        <h2>store</h2>
+                        <p class="text-gray-400">bought the mastering python course</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="flex justify-end">18:10</p>
+                    <p class="text-gray-400">yesterday</p>
+                </div>
+            </div>
+
+            
+            <div class="border-b py-4 flex items-center justify-between">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-graduation-cap rounded-full p-4 bg-red-700 text-white text-xl mr-2"></i>
+                    <div>
+                        <h2 class="font-semibold">academy</h2>
+                        <p class="text-gray-400">got the PHP certificate</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="flex justify-end">16:05</p>
+                    <p class="text-gray-400">yesterday</p>
+                </div>
+            </div>
+            
+            <div class="border-b py-4 flex items-center justify-between">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-graduation-cap rounded-full p-4 bg-blue-700 text-white text-xl mr-2"></i>
+                    <div>
+                        <h2>badges</h2>
+                        <p class="text-gray-400">unlocked the 10 skills badge</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="flex justify-end">18:05</p>
+                    <p class="text-gray-400">yesterday</p>
+                </div>
+            </div>
+
+            <div class="py-4 flex items-center justify-between">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-store rounded-full p-4 bg-rose-700 text-white text-xl mr-2"></i>
+                    <div>
+                        <h2 class="font-semibold">store</h2>
+                        <p class="text-gray-400">bought the TypeScript course</p>
+                    </div>
+                </div>
+                <div>
+                    <p class="flex justify-end">12:05</p>
+                    <p class="text-gray-400">yesterday</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+
+

@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .head-page {
+    @apply w-fit
+                capitalize
+                text-3xl
+                font-bold
+                relative
+                before:absolute
+                before:content-['']
+                before:w-[calc(100%_-_2rem)]
+                before:h-[3px]
+                before:left-0
+                before:bottom-[-10px]
+                before:bg-white
+                after:absolute
+                after:content-['']
+                after:w-[2rem]
+                after:h-[3px]
+                after:left-0
+                after:bottom-[-10px]
+                after:bg-black;
+  }
+  .logo {
+    @apply mt-4
+            w-fit
+            mx-auto
+            capitalize
+            text-[1.5rem]
+            sm:text-[1rem]
+            sm:font-bold
+            font-semibold
+            relative
+            md:before:content-['']
+            md:before:absolute
+            md:before:-bottom-4
+            md:before:left-[-1rem]
+            md:before:bg-black
+            md:before:w-[calc(100%_+_2rem)]
+            md:before:h-[2px]
+            md:after:content-['']
+            md:after:absolute
+            md:after:top-[calc(50%_+_1.4rem)]
+            md:after:left-[50%]
+            md:after:translate-x-[-50%]
+            md:after:bg-black
+            md:after:w-[22px]
+            md:after:h-[22px]
+            md:after:rounded-full
+            md:after:border-[5px]
+            md:after:border-white;
+  }
+  .a {
+    @apply rounded-lg py-4 mb-2 block text-start;
+  }
+  .active {
+    @apply bg-gray-100;
+  }
+  .sidebar-mobile {
+    @apply xside:hidden;
+  }
+  .fit {
+    @apply grid grid-auto-fit-[30rem] gap-4 my-8;
+  }
+  .card {
+    @apply bg-white rounded-xl p-4 capitalize;
+  }
+  .head-card {
+    @apply text-2xl font-bold;
+  }
+  .check-btn {
+    @apply w-[70px] h-[30px] rounded-2xl 
+                bg-blue-500
+                cursor-pointer
+                relative
+                after:content-['']
+                after:text-blue-500
+                after:text-center
+                after:rounded-full
+                after:w-[20px]
+                after:h-[20px]
+                after:absolute
+                after:right-1
+                after:top-[5px]
+                after:bg-white;
+  }
+  .div-rate {
+    @apply w-[50%] h-[5px] rounded-xl bg-gray-200 mt-2;
+  }
+  .span-rate {
+    @apply block w-[80%] h-full bg-blue-600 rounded-xl;
+  }
+  .plans {
+    @apply bg-green-400
+                py-4
+                text-center
+                border-2
+                border-green-400 
+                text-white 
+                relative 
+                before:absolute 
+                before:content-[''] 
+                before:top-0 
+                before:bottom-0 
+                before:left-0 
+                before:border-2 
+                before:border-white 
+                before:w-full;
+  }
+}
+
+@layer utilities {
+  .grid-custom {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  .grid-settings,
+  .grid-dashboard,
+  .grid-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 1rem;
+  }
+  @media (max-width: 767px) {
+    .grid-settings,
+    .grid-dashboard,
+    .grid-projects {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+  }
+  .grid-custom-files {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .grid-profile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+  }
+  @media (max-width: 992px) {
+    .grid-profile {
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+  }
+  @media (max-width: 767px) {
+    .grid-profile {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+  }
+  .grid-plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+  @media (min-width: 1533px) {
+    .grid-plans {
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+  }
+  .files {
+    display: grid;
+    gap: 1rem;
+  }
+  @media (min-width: 992px) {
+    .files {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+  .grid-files {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osama Settings</title>
+    <!-- Icons File -->
+    <link rel="stylesheet" href="./all.min.css">
+    <!-- TailwindCSS File -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-fontbody grid grid-cols-12 bg-slate-100">
+
+    <header class="grid col-span-2 content-start bg-white shadow-xl z-10 min-h-screen">
+        <h1 class="logo">osama</h1>
+        <div class="text-center my-[3rem] text-xl capitalize px-4 sm:px-2">
+            <a href="./dashboard.html" class="a"><i class="fa-solid fa-chart-bar fa-fw ml-2"></i><span class="sidebar-mobile ml-2">dashboard</span></a>
+            <a href="./settings.html" class="a active"><i class="fa-solid fa-gear fa-fw ml-2"></i><span class="sidebar-mobile ml-2">settings</span></a>
+            <a href="./profile.html" class="a"><i class="fa-regular fa-user fa-fw ml-2"></i><span class="sidebar-mobile ml-2">profile</span></a>
+            <a href="./projects.html" class="a"><i class="fa-solid fa-diagram-project fa-fw ml-2"></i><span class="sidebar-mobile ml-2">projects</span></a>
+            <a href="./courses.html" class="a"><i class="fa-solid fa-graduation-cap fa-fw ml-2"></i><span class="sidebar-mobile ml-2">courses</span></a>
+            <a href="./friends.html" class="a"><i class="fa-solid fa-user-group fa-fw ml-2"></i><span class="sidebar-mobile ml-2">friends</span></a>
+            <a href="./files.html" class="a"><i class="fa-regular fa-file fa-fw ml-2"></i><span class="sidebar-mobile ml-2">files</span></a>
+            <a href="./plans.html" class="a"><i class="fa-solid fa-pager fa-fw ml-2"></i><span class="sidebar-mobile ml-2">plans</span></a>
+        </div>
+    </header>
+
+    
+<section class="main-section p-4 col-start-3 col-span-10" >
+    
+    <header class="bg-white flex items-center justify-between h-[5rem] px-[1rem] -m-4">
+        <input type="search" placeholder="type a keyword" class="rounded-xl placeholder:capitalize pl-12 border-gray-300 relative">
+        <i class="fa-solid fa-magnifying-glass absolute px-4 text-gray-400"></i>
+        <div class="flex items-center justify-center relative before:content-[''] before:absolute before:w-[10px] before:h-[10px] before:bg-red-600 before:rounded-full before:top-0 before:left-[5px]">
+            <i class="fa-solid fa-bell mr-3"></i>
+            <img src="../image/avatar-01.png" class="h-[30px] w-[30px] rounded-full" alt="">
+        </div>
+    </header>
+
+    <div class="section-1 mt-8">
+        <h1 class="head-page">settings</h1>
+    </div>
+
+    <div class="section-2 grid-settings mt-8">
+        <div class="card">
+            <h1 class="head-card">site control</h1>
+            <p class="text-gray-400">control the website if there is maintenance</p>
+            <div class="flex items-cemter justify-between mt-4">
+                <div>
+                    <h2 class="semibold text-xl">website control</h2>
+                    <p class="text-gray-400">open/close website and type of reason</p>
+                </div>
+                <span class="check-btn"></span>
+            </div>
+            <textarea class="resize-none border-gray-200 w-full mt-8 rounded-xl h-[150px]" placeholder="Close Message Content"></textarea>
+        </div>
+
+        <div class="card">
+            <h1 class="head-card">general info</h1>
+            <p class="text-gray-400">general information about your account</p>
+            <div class="mt-4">
+                <label class="text-gray-400">first name</label>
+                <input type="text" class="w-full rounded-lg border-gray-200 border-2 mt-2 placeholder:text-gray-400" placeholder="First name">
+                <label class="text-gray-400 mt-2">last name</label>
+                <input type="text" class="w-full rounded-lg border-gray-200 border-2 mt-2 placeholder:text-gray-400" placeholder="First name">
+                <label class="text-gray-400 mt-2">email</label>
+                <div class="flex items-center">
+                    <input type="text" class="w-full bg-slate-100 rounded-lg border-gray-200 border-2 mt-2 placeholder:text-gray-400" placeholder="email@no.asd">
+                    <a href="#" class="text-blue-500 font-semibold ml-4">change</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h1 class="head-card">security info</h1>
+            <p class="text-gray-400">security information about your account</p>
+            <div class="mt-4 flex items-center justify-between pb-6 border-b-2">
+                <div>
+                    <h2 class="font-semibold">password</h2>
+                    <p class="text-gray-400">last change on 25/10/2021</p>
+                </div>
+                <a href="#" class="bg-blue-400 text-white py-1 px-2 rounded-lg">change</a>
+            </div>
+
+            <div class="mt-4 flex items-center justify-between pb-6 border-b-2">
+                <div>
+                    <h2 class="font-semibold">two-factor authentication</h2>
+                    <p class="text-gray-400">enable/disable the feature</p>
+                </div>
+                <span class="check-btn"></span>
+            </div>
+
+            <div class="mt-4 flex items-center justify-between">
+                <div>
+                    <h2 class="font-semibold">devices</h2>
+                    <p class="text-gray-400">check the login devices list</p>
+                </div>
+                <a href="#" class="bg-gray-100 py-1 px-2 rounded-lg">devices</a>
+            </div>
+        </div>
+        <div class="card">
+            <h1 class="head-card">social info</h1>
+            <p class="text-gray-400 my-2">social media information</p>
+            <div class="border-2 border-gray-200 rounded-lg bg-gray-100 flex items-center">
+                <i class="fa-brands fa-twitter border-r-2 text-2xl text-gray-400 w-12 h-12 flex items-center justify-center"></i>
+                <input type="text" class="border-none placeholder:capitalize w-full bg-transparent" placeholder="twitter username">
+            </div>
+            <div class="mt-4 border-2 border-gray-200 rounded-lg bg-gray-100 flex items-center">
+                <i class="fa-brands fa-facebook border-r-2 text-2xl text-gray-400 w-12 h-12 flex items-center justify-center"></i>
+                <input type="text" class="border-none placeholder:capitalize w-full bg-transparent" placeholder="facebook username">
+            </div>
+            <div class="my-4 border-2 border-gray-200 rounded-lg bg-gray-100 flex items-center">
+                <i class="fa-brands fa-linkedin border-r-2 text-2xl text-gray-400 w-12 h-12 flex items-center justify-center"></i>
+                <input type="text" class="border-none placeholder:capitalize w-full bg-transparent" placeholder="linkedin username">
+            </div>
+            <div class="border-2 border-gray-200 rounded-lg bg-gray-100 flex items-center">
+                <i class="fa-brands fa-youtube border-r-2 text-2xl text-gray-400 w-12 h-12 flex items-center justify-center"></i>
+                <input type="text" class="border-none placeholder:capitalize w-full bg-transparent" placeholder="youtube username">
+            </div>
+        </div>
+    
+        <div class="card">
+            <h1 class="head-card">widgets control</h1>
+            <p class="text-gray-400 my-2">show/hide widgets</p>
+            <div>
+                <input type="checkbox">
+                <label class="ml-2 font-semibold">quick drift</label>
+            </div>
+            <div class="mt-4">
+                <input type="checkbox">
+                <label class="ml-2 font-semibold">yearly targets</label>
+            </div>
+            <div class="my-4">
+                <input type="checkbox">
+                <label class="ml-2 font-semibold">tickets statistics</label>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label class="ml-2 font-semibold">lastest news</label>
+            </div>
+            <div class="my-4">
+                <input type="checkbox">
+                <label class="ml-2 font-semibold">lastest tasks</label>
+            </div>
+            <div>
+                <input type="checkbox">
+                <label class="ml-2 font-semibold">top search items</label>
+            </div>
+        </div>
+    
+        <div class="card">
+            <h1 class="head-card">backup manager</h1>
+            <p class="text-gray-400 my-2">control backup time and location</p>
+            <div>
+                <input type="radio">
+                <label class="ml-2 font-semibold">daily</label>
+            </div>
+            <div class="my-2">
+                <input type="radio">
+                <label class="ml-2 font-semibold">weekly</label>
+            </div>
+            <div class="border-b pb-4">
+                <input type="radio">
+                <label class="ml-2 font-semibold">monthly</label>
+            </div>
+            <div class="grid grid-auto-fit-[5rem] gap-4 mt-4">
+                <div class="text-center border-2 rounded-xl p-4 duration-300 hover:text-blue-500 hover:border-blue-500">
+                    <i class="fa-solid fa-server"></i>
+                    <p class="font-semibold">megaman</p>
+                </div>
+                <div class="text-center border-2 rounded-xl p-4 duration-300 hover:text-blue-500 hover:border-blue-500">
+                    <i class="fa-solid fa-server"></i>
+                    <p class="font-semibold">zero</p>
+                </div>
+                <div class="text-center border-2 rounded-xl p-4 duration-300 hover:text-blue-500 hover:border-blue-500">
+                    <i class="fa-solid fa-server"></i>
+                    <p class="font-semibold">sigma</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+
+
+
+
