@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osama Dashboard</title>
+    <!-- Icons File -->
+    <link rel="stylesheet" href="./layouts/all.min.css">
+    <!-- TailwindCSS File -->
+    <link rel="stylesheet" href="./layouts/css/styles.css">
+</head>
+<body class="font-fontbody grid grid-cols-12 bg-slate-100">
+
+    <header class="grid col-span-2 content-start bg-white shadow-xl z-10">
+        <h1 class="logo">osama</h1>
+        <div class="text-center my-[3rem] text-xl capitalize px-4 sm:px-2">
+            <a href="./layouts/index.html" class="a active"><i class="fa-solid fa-chart-bar fa-fw ml-2"></i><span class="sidebar-mobile ml-2">dashboard</span></a>
+            <a href="./layouts/settings.html" class="a"><i class="fa-solid fa-gear fa-fw ml-2"></i><span class="sidebar-mobile ml-2">settings</span></a>
+            <a href="./layouts/profile.html" class="a"><i class="fa-regular fa-user fa-fw ml-2"></i><span class="sidebar-mobile ml-2">profile</span></a>
+            <a href="./layouts/projects.html" class="a"><i class="fa-solid fa-diagram-project fa-fw ml-2"></i><span class="sidebar-mobile ml-2">projects</span></a>
+            <a href="./layouts/courses.html" class="a"><i class="fa-solid fa-graduation-cap fa-fw ml-2"></i><span class="sidebar-mobile ml-2">courses</span></a>
+            <a href="./layouts/friends.html" class="a"><i class="fa-solid fa-user-group fa-fw ml-2"></i><span class="sidebar-mobile ml-2">friends</span></a>
+            <a href="./layouts/files.html" class="a"><i class="fa-regular fa-file fa-fw ml-2"></i><span class="sidebar-mobile ml-2">files</span></a>
+            <a href="./layouts/plans.html" class="a"><i class="fa-solid fa-pager fa-fw ml-2"></i><span class="sidebar-mobile ml-2">plans</span></a>
+        </div>
+    </header>
+
+    
+<section class="main-section p-4 col-start-3 col-span-10" >
+    
+    <header class="bg-white flex items-center justify-between h-[5rem] px-[1rem] -m-4">
+        <input type="search" placeholder="type a keyword" class="rounded-xl placeholder:capitalize pl-12 border-gray-300 relative">
+        <i class="fa-solid fa-magnifying-glass absolute px-4 text-gray-400"></i>
+        <div class="flex items-center justify-center relative before:content-[''] before:absolute before:w-[10px] before:h-[10px] before:bg-red-600 before:rounded-full before:top-0 before:left-[5px]">
+            <i class="fa-solid fa-bell mr-3"></i>
+            <img src="../image/avatar-01.png" class="h-[30px] w-[30px] rounded-full" alt="">
+        </div>
+    </header>
+
+    <section class="section-1 mt-8">
+        <h1 class="head-page">dashboard</h1>
+
+        <div class="grid-dashboard my-8">
+            
+            <div class="bg-white rounded-xl">
+                <div class="flex justify-between p-4 bg-gray-200 rounded-t-xl">
+                    <div>
+                        <h1 class="text-2xl font-bold capitalize">welcome</h1>
+                        <p class="text-gray-400 capitalize">osama</p>
+                    </div>
+                    <img src="../image/team-04.jpg" alt="" class="w-[100px]">
+                </div>
+                <div class="relative bg-white rounded-b-xl">
+                    <img src="../image/avatar-02.png" alt="" class="rounded-full w-[60px] border-4 border-white absolute -top-8 left-4">
+                    <div class="flex justify-around pt-12">
+                        <div class="text-center capitalize">
+                            <h2 class="text-lg font-semibold">osama dev</h2>
+                            <p class="text-gray-400">developer</p>
+                        </div>
+                        <div class="text-center capitalize">
+                            <span class="text-lg font-semibold">80</span>
+                            <p class="text-gray-400">projects</p>
+                        </div>
+                        <div class="text-center capitalize">
+                            <span class="text-lg font-semibold">$8500</span>
+                            <p class="text-gray-400">earned</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-end items-center pt-8 pr-4">
+                        <a href="#" class="text-white bg-blue-600 capitalize mb-4 py-1 px-4 rounded-md">profile</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl p-4">
+                <div>
+                    <h1 class="text-2xl font-bold capitalize">quick drift</h1>
+                    <p class="text-gray-400 capitalize">write a drift for your ideas</p>
+                </div>
+                <div class="py-4">
+                    <input type="text" placeholder="Title" class="capitalize block w-full bg-gray-200 border-none rounded-lg placeholder:text-gray-400">
+                    <textarea placeholder="your thought" class="capitalize resize-none mt-4 block w-full h-[200px] bg-gray-200 border-none rounded-lg placeholder:text-gray-400"></textarea>
+                </div>
+                <div class="flex justify-end items-center">
+                    <a href="#" class="text-white bg-blue-600 capitalize py-1 px-4 rounded-md">save</a>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl p-4">
+                <div>
+                    <h1 class="text-2xl font-bold capitalize">yearly targets</h1>
+                    <p class="text-gray-400 capitalize">targets of the year</p>
+                </div>
+                <div>
+                    <div class="py-4 flex items-center">
+                        <span class="w-[100px] h-[80px] bg-blue-100 flex items-center justify-center text-blue-500 text-2xl font-bold">$</span>
+                        <div class="ml-4 capitalize w-full">
+                            <h1 class="text-gray-400">money</h1>
+                            <p class="font-bold">$20.000</p>
+                            <div class="mt-2 w-full h-[4px] bg-blue-100 relative">
+                                <p data-progress="80%" class="bg-blue-500 h-[100%] w-[80%] relative
+                                before:content-[attr(data-progress)]
+                                before:flex
+                                before:items-center
+                                before:justify-center
+                                before:absolute
+                                before:bg-blue-500 
+                                before:text-white 
+                                before:bottom-4 
+                                before:right-[-20px] 
+                                before:w-12 
+                                before:h-8 
+                                before:rounded-lg
+                                after:content:['']
+                                after:absolute 
+                                after:bottom-0
+                                after:-right-1
+                                after:border-[8px]
+                                after:border-transparent
+                                after:border-t-blue-500
+                                ">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="py-4 flex items-center">
+                        <span class="w-[100px] h-[80px] bg-orange-100 flex items-center justify-center text-orange-500 text-2xl font-bold"><i class="fa-solid fa-diagram-project"></i></span>
+                        <div class="ml-4 capitalize w-full">
+                            <h1 class="text-gray-400">projects</h1>
+                            <p class="font-bold">24</p>
+                            <div class="mt-2 w-full h-[4px] bg-orange-100 relative">
+                                <p data-progress="55%" class="bg-orange-500 h-[100%] w-[55%] relative
+                                before:content-[attr(data-progress)]
+                                before:flex
+                                before:items-center
+                                before:justify-center
+                                before:absolute
+                                before:bg-orange-500 
+                                before:text-white 
+                                before:bottom-4 
+                                before:right-[-20px] 
+                                before:w-12 
+                                before:h-8 
+                                before:rounded-lg
+                                after:content:['']
+                                after:absolute 
+                                after:bottom-0
+                                after:-right-1
+                                after:border-[8px]
+                                after:border-transparent
+                                after:border-t-orange-500
+                                ">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="py-4 flex items-center">
+                        <span class="w-[100px] h-[80px] bg-green-100 flex items-center justify-center text-green-500 text-2xl font-bold"><i class="fa-regular fa-user px-4"></i></span>
+                        <div class="ml-4 capitalize w-full">
+                            <h1 class="text-gray-400">team</h1>
+                            <p class="font-bold">12</p>
+                            <div class="mt-2 w-full h-[4px] bg-green-100 relative">
+                                <p data-progress="75%" class="bg-green-500 h-[100%] w-[75%] relative
+                                before:content-[attr(data-progress)]
+                                before:flex
+                                before:items-center
+                                before:justify-center
+                                before:absolute
+                                before:bg-green-500 
+                                before:text-white 
+                                before:bottom-4 
+                                before:right-[-20px] 
+                                before:w-12 
+                                before:h-8 
+                                before:rounded-lg
+                                after:content:['']
+                                after:absolute 
+                                after:bottom-0
+                                after:-right-1
+                                after:border-[8px]
+                                after:border-transparent
+                                after:border-t-green-500
+                                ">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl p-4">
+                <div>
+                    <h1 class="text-2xl font-bold capitalize">tickets statistics</h1>
+                    <p class="text-gray-400 capitalize">everything about support tickets</p>
+                </div>
+                <div class="py-4 grid grid-auto-fit-xs gap-4 text-center">
+                    <div class="capitalize py-4 border-2 border-gray-300 rounded-xl">
+                        <i class="fa-solid fa-book text-2xl text-blue-600"></i>
+                        <p class="font-bold text-2xl">2500</p>
+                        <p class="text-gray-400">total</p>
+                    </div>
+                    <div class="capitalize py-4 border-2 border-gray-300 rounded-xl">
+                        <i class="fa-solid fa-book text-2xl text-orange-600"></i>
+                        <p class="font-bold text-2xl">500</p>
+                        <p class="text-gray-400">pending</p>
+                    </div>
+                    <div class="capitalize py-4 border-2 border-gray-300 rounded-xl">
+                        <i class="fa-solid fa-book text-2xl text-indigo-600"></i>
+                        <p class="font-bold text-2xl">1900</p>
+                        <p class="text-gray-400">closed</p>
+                    </div>
+                    <div class="capitalize py-4 border-2 border-gray-300 rounded-xl">
+                        <i class="fa-solid fa-book text-2xl text-green-600"></i>
+                        <p class="font-bold text-2xl">100</p>
+                        <p class="text-gray-400">deleted</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="bg-white rounded-xl p-4">
+                <h1 class="text-2xl font-bold capitalize">lastest news</h1>
+                <div class="flex items-center justify-between sm:flex-col py-4 border-b-2">
+                    <div class="flex sm:flex-col">
+                        <img src="../image/cat-01.jpg" alt="" class="w-[100px] rounded-xl sm:mx-auto sm:mb-2 sm:w-[150px]">
+                        <div class="ml-4 capitalize sm:text-center sm:ml-0">
+                            <h1 class="font-bold text-xl">created <span class="uppercase">sass</span> section</h1>
+                            <p class="text-gray-400">new <span class="uppercase">sass </span> examples & tutorials</p>
+                        </div>
+                    </div>
+                    <label class="bg-gray-200 capitalize py-1 px-4 rounded-xl text-center sm:mt-2">3 days ago</label>
+                </div>
+        
+                <div class="flex items-center justify-between sm:flex-col py-4 border-b-2">
+                    <div class="flex sm:flex-col">
+                        <img src="../image/cat-02.jpg" alt="" class="w-[100px] rounded-xl sm:mx-auto sm:mb-2 sm:w-[150px]">
+                        <div class="ml-4 capitalize sm:text-center sm:ml-0">
+                            <h1 class="font-bold text-xl">changed the design</h1>
+                            <p class="text-gray-400">a brand new website design</p>
+                        </div>
+                    </div>
+                    <label class="bg-gray-200 capitalize py-1 px-4 rounded-xl text-center sm:mt-2">5 days ago</label>
+                </div>
+                
+                <div class="flex items-center justify-between py-4 border-b-2 sm:flex-col">
+                    <div class="flex sm:flex-col">
+                        <img src="../image/cat-03.jpg" alt="" class="w-[100px] rounded-xl sm:mx-auto sm:mb-2 sm:w-[150px]">
+                        <div class="ml-4 capitalize sm:text-center sm:ml-0">
+                            <h1 class="font-bold text-xl">team increased</h1>
+                            <p class="text-gray-400">3 developers joined the team</p>
+                        </div>
+                    </div>
+                    <label class="bg-gray-200 capitalize py-1 px-4 rounded-xl text-center sm:mt-2">7 days ago</label>
+                </div>
+                
+                <div class="flex items-center justify-between pt-4 sm:flex-col">
+                    <div class="flex sm:flex-col">
+                        <img src="../image/cat-04.jpg" alt="" class="w-[100px] rounded-xl sm:mx-auto sm:mb-2 sm:w-[150px]">
+                        <div class="ml-4 capitalize sm:text-center sm:ml-0">
+                            <h1 class="font-bold text-xl">added payment gateway</h1>
+                            <p class="text-gray-400">many new payment gateway added</p>
+                        </div>
+                    </div>
+                    <label class="bg-gray-200 capitalize py-1 px-4 rounded-xl text-center sm:mt-2">9 days ago</label>
+                </div>
+            </div>
+        
+            <div>
+                <div class="bg-white rounded-xl p-4">
+                    <h1 class="text-2xl font-bold capitalize">lastest tasks</h1>
+                        <div class="flex items-center justify-between py-4 capitalize border-b-2">
+                            <div>
+                                <h1 class="font-bold text-xl">added payment gateway</h1>
+                                <p class="text-gray-400">many new payment gateway added</p>
+                            </div>
+                            <i class="fa-solid fa-trash-can cursor-pointer"></i>
+                        </div>
+        
+                        <div class="flex items-center justify-between py-4 capitalize border-b-2">
+                            <div>
+                                <h1 class="font-bold text-xl">write article</h1>
+                                <p class="text-gray-400">write low level high level languages</p>
+                            </div>
+                            <i class="fa-solid fa-trash-can cursor-pointer"></i>
+                        </div>
+        
+                        <div class="flex items-center justify-between py-4 capitalize border-b-2">
+                            <div>
+                                <h1 class="font-bold text-xl">finish project</h1>
+                                <p class="text-gray-400">publish academy programming project</p>
+                            </div>
+                            <i class="fa-solid fa-trash-can cursor-pointer"></i>
+                        </div>
+        
+                        <div class="flex items-center justify-between py-4 capitalize border-b-2">
+                            <div>
+                                <h1 class="font-bold text-xl opacity-60 w-fit relative after:content-[''] after:absolute after:w-full after:h-[1px] after:bg-black after:left-0 after:top-[50%]">attend the meeting</h1>
+                                <p class="text-gray-400 opacity-80  w-fit relative after:content-[''] after:absolute after:w-full after:h-[1px] after:bg-gray-300 after:left-0 after:top-[50%]">attend the project business analysis meeting</p>
+                            </div>
+                            <i class="fa-solid fa-trash-can cursor-pointer"></i>
+                        </div>
+        
+                        <div class="flex items-center justify-between py-4 capitalize">
+                            <div>
+                                <h1 class="font-bold text-xl">finish lesson</h1>
+                                <p class="text-gray-400">finish teaching flex box</p>
+                            </div>
+                            <i class="fa-solid fa-trash-can cursor-pointer"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-4 rounded-xl capitalize">
+                    <h1 class="text-2xl font-bold">top search items</h1>
+                    <div class="flex justify-between my-4 capitalize">
+                        <p class="text-gray-400">keyword</p>
+                        <p class="text-gray-400">search count</p>
+                    </div>
+                    <div class="flex justify-between my-4">
+                        <p class="font-semibold">programming</p>
+                        <p class="py-2 px-3 bg-gray-200 rounded-xl">220</p>
+                    </div>
+                    <div class="flex justify-between my-4">
+                        <p class="font-semibold">javaScript</p>
+                        <p class="py-2 px-3 bg-gray-200 rounded-xl">180</p>
+                    </div>
+                    <div class="flex justify-between my-4">
+                        <p class="font-semibold">php</p>
+                        <p class="py-2 px-3 bg-gray-200 rounded-xl">160</p>
+                    </div>
+                    <div class="flex justify-between my-4">
+                        <p class="font-semibold">code</p>
+                        <p class="py-2 px-3 bg-gray-200 rounded-xl">145</p>
+                    </div>
+                    <div class="flex justify-between my-4">
+                        <p class="font-semibold">design</p>
+                        <p class="py-2 px-3 bg-gray-200 rounded-xl">110</p>
+                    </div>
+                    <div class="flex justify-between my-4">
+                        <p class="font-semibold">login</p>
+                        <p class="py-2 px-3 bg-gray-200 rounded-xl">95</p>
+                    </div>
+                </div>
+            
+                <div class="bg-white p-4 rounded-xl capitalize">
+                    <h1 class="text-2xl font-bold">lastest upload</h1>
+                    <div>
+                        <div class="flex justify-between items-center mt-4 border-b-2 pb-2">
+                            <div class="flex items-center">
+                                <i class="fa-solid fa-file-pdf text-4xl mr-3 text-red-400"></i>
+                                <div>
+                                    <h1 class="lowercase font-semibold">my-file.pdf</h1>
+                                    <p class="text-gray-400">osama</p>
+                                </div>
+                            </div>
+                            <p class="py-2 px-3 bg-gray-200 rounded-xl">2.9mb</p>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <div class="flex justify-between items-center mt-2 border-b-2 pb-2">
+                            <div class="flex items-center">
+                                <i class="fa-solid fa-file-pdf text-4xl mr-3 text-red-400"></i>
+                                <div>
+                                    <h1 class="font-semibold">my-Video-file.pdf</h1>
+                                    <p class="text-gray-400">admin</p>
+                                </div>
+                            </div>
+                            <p class="py-2 px-3 bg-gray-200 rounded-xl">4.9mb</p>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <div class="flex justify-between items-center mt-2 border-b-2 pb-2">
+                            <div class="flex items-center">
+                                <i class="fa-solid fa-file-pdf text-4xl mr-3 text-blue-400"></i>
+                                <div>
+                                    <h1 class="lowercase font-semibold">my-Psd-file.pdf</h1>
+                                    <p class="text-gray-400">osama</p>
+                                </div>
+                            </div>
+                            <p class="py-2 px-3 bg-gray-200 rounded-xl">4.5mb</p>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <div class="flex justify-between items-center mt-2 border-b-2 pb-2">
+                            <div class="flex items-center">
+                                <i class="fa-solid fa-file-pdf text-4xl mr-3 text-green-400"></i>
+                                <div>
+                                    <h1 class="lowercase font-semibold">my-Zip-file.pdf</h1>
+                                    <p class="text-gray-400">user</p>
+                                </div>
+                            </div>
+                            <p class="py-2 px-3 bg-gray-200 rounded-xl">8.9mb</p>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <div class="flex justify-between items-center mt-2 border-b-2 pb-2">
+                            <div class="flex items-center">
+                                <i class="fa-solid fa-file-pdf text-4xl mr-3 text-purple-400"></i>
+                                <div>
+                                    <h1 class="lowercase font-semibold">my-DLL-file.pdf</h1>
+                                    <p class="text-gray-400">admin</p>
+                                </div>
+                            </div>
+                            <p class="py-2 px-3 bg-gray-200 rounded-xl">4.9mb</p>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <div class="flex justify-between items-center mt-2 pb-2">
+                            <div class="flex items-center">
+                                <i class="fa-solid fa-file-pdf text-4xl mr-3 text-orange-400"></i>
+                                <div>
+                                    <h1 class="lowercase font-semibold">my-Eps-file.pdf</h1>
+                                    <p class="text-gray-400">designer</p>
+                                </div>
+                            </div>
+                            <p class="py-2 px-3 bg-gray-200 rounded-xl">8.9mb</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="bg-white p-4 rounded-xl capitalize relative">
+                    <h1 class="text-2xl font-bold">last project progress</h1>
+                    <ul class="mt-4 relative
+                                before:content-['']
+                                before:absolute
+                                before:bg-blue-500
+                                before:left-[12px]
+                                before:top-0
+                                before:w-[3px]
+                                before:h-full
+                                ">
+                        <div class="flex items-center mb-4 relative">
+                            <span class="w-[26px] h-[26px] rounded-full border-2 border-blue-700 bg-white"></span>
+                            <li class="ml-6 font-semibold
+                            before:content-['']
+                            before:bg-blue-500
+                            before:left-[4px]
+                            before:top-[4px]
+                            before:w-[18px]
+                            before:h-[18px]
+                            before:absolute
+                            before:rounded-full           
+                            ">got the progect</li>
+                        </div>
+                        <div class="flex items-center mb-4 relative">
+                            <span class="w-[26px] h-[26px] rounded-full border-2 border-blue-700 bg-white"></span>
+                            <li class="ml-6 font-
+                            before:content-['']
+                            before:bg-blue-500
+                            before:left-[4px]
+                            before:top-[4px]
+                            before:w-[18px]
+                            before:h-[18px]
+                            before:absolute
+                            before:rounded-full
+                            ">started the project</li>
+                        </div>
+                        <div class="flex items-center mb-4 relative">
+                            <span class="w-[26px] h-[26px] rounded-full border-2 border-blue-700 bg-white"></span>
+                            <li class="ml-6 font-semibold
+                            before:content-['']
+                            before:bg-blue-500
+                            before:left-[4px]
+                            before:top-[4px]
+                            before:w-[18px]
+                            before:h-[18px]
+                            before:absolute
+                            before:rounded-full
+                            ">the project about to finish</li>
+                        </div>
+                        <div class="flex items-center mb-4 relative">
+                            <span class="w-[26px] h-[26px] rounded-full border-2 border-blue-700 bg-white"></span>
+                            <li class="ml-6 font-semibold
+                                        before:content-['']
+                                        before:bg-blue-300
+                                        before:left-[4px]
+                                        before:top-[4px]
+                                        before:w-[18px]
+                                        before:h-[18px]
+                                        before:absolute
+                                        before:rounded-full  
+                            ">test the project</li>
+                        </div>
+                        <div class="flex items-center mb-4 relative">
+                            <span class="w-[26px] h-[26px] rounded-full border-2 border-blue-700 bg-white"></span>
+                            <li class="ml-6 font-semibold">finish the project & get money</li>
+                        </div>
+                    </ul>
+                    <img src="../image/discount.png" alt="image" class="w-[100px] absolute bottom-6 right-6 opacity-40">
+                </div>
+                <div class="p-4 bg-white rounded-xl">
+                    <h1 class="text-3xl font-bold">reminders</h1>
+                    <div class="relative
+                                pl-16
+                                mt-4
+                                before:absolute
+                                before:content-['']
+                                before:left-9
+                                before:top-0
+                                before:h-full
+                                before:w-[3px]
+                                before:bg-blue-600
+                                after:absolute
+                                after:content-['']
+                                after:left-0
+                                after:top-[50%]
+                                after:translate-y-[-50%]
+                                after:h-[15px]
+                                after:w-[15px]
+                                after:rounded-full
+                                after:bg-blue-600
+                                ">
+                        <h1 class="font-bold text-xl">check my tasks list</h1>
+                        <p class="text-gray-400 mt-2">28/09/2022 - 12:00am</p>
+                    </div>
+            
+                    <div class="relative
+                                pl-16
+                                mt-4
+                                before:absolute
+                                before:content-['']
+                                before:left-9
+                                before:top-0
+                                before:h-full
+                                before:w-[3px]
+                                before:bg-green-600
+                                after:absolute
+                                after:content-['']
+                                after:left-0
+                                after:top-[50%]
+                                after:translate-y-[-50%]
+                                after:h-[15px]
+                                after:w-[15px]
+                                after:rounded-full
+                                after:bg-green-600
+                                ">
+                        <h1 class="font-bold text-xl">check my projects</h1>
+                        <p class="text-gray-400 mt-2">26/10/2022 - 12:00am</p>
+                    </div>
+            
+                    <div class="relative
+                                pl-16
+                                mt-4
+                                before:absolute
+                                before:content-['']
+                                before:left-9
+                                before:top-0
+                                before:h-full
+                                before:w-[3px]
+                                before:bg-orange-600
+                                after:absolute
+                                after:content-['']
+                                after:left-0
+                                after:top-[50%]
+                                after:translate-y-[-50%]
+                                after:h-[15px]
+                                after:w-[15px]
+                                after:rounded-full
+                                after:bg-orange-600
+                                ">
+                        <h1 class="font-bold text-xl">call all my clients</h1>
+                        <p class="text-gray-400 mt-2">05/11/2022 - 12:00am</p>
+                    </div>  
+                    
+                    <div class="relative
+                                pl-16
+                                mt-4
+                                before:absolute
+                                before:content-['']
+                                before:left-9
+                                before:top-0
+                                before:h-full
+                                before:w-[3px]
+                                before:bg-red-600
+                                after:absolute
+                                after:content-['']
+                                after:left-0
+                                after:top-[50%]
+                                after:translate-y-[-50%]
+                                after:h-[15px]
+                                after:w-[15px]
+                                after:rounded-full
+                                after:bg-red-600
+                                ">
+                        <h1 class="font-bold text-xl">finish the development workshop</h1>
+                        <p class="text-gray-400 mt-2">26/10/2022 - 12:00am</p>
+                    </div>
+                </div>
+            
+                <div class="p-4 bg-white rounded-xl">
+                    <h1 class="text-3xl font-bold">lastest post</h1>
+                    <div class="flex items-center mt-4 border-b-2 pb-4">
+                        <img src="../image/avatar-03.png" alt="image" class="w-[60px] rounded-full">
+                        <div class="pl-4">
+                            <h1 class="font-bold">osama dev</h1>
+                            <p class="text-gray-500">about 3 hours ago</p>
+                        </div>
+                    </div>
+                    <p class="py-4 font-semibold border-b-2">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, ad iure dolor fugit rem aperiam omnis error explicabo quasi est, autem libero reiciendis delectus temporibus praesentium ab, voluptatem deleniti suscipit.
+                    </p>
+                    <div class="flex items-center justify-between text-gray-400 font-semibold pt-4">
+                        <div>
+                            <i class="fa-regular fa-heart mr-1"></i>1.8k
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-message mr-1"></i>500
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="p-4 bg-white rounded-xl capitalize">
+                    <h1 class="text-3xl font-bold">lastest post</h1>
+                    <div class="mt-4 bg-blue-300 flex items-center justify-between">
+                        <div class="flex items-center">
+                            <i class="fa-brands fa-twitter text-4xl text-white py-2 pl-2 rounded-none h-full"></i>
+                            <p class="text-blue-700 font-semibold ml-4">90k followers</p>
+                        </div>
+                        <a href="#" class="bg-blue-500 text-white mr-4 py-1 px-4 rounded-xl">follow</a>
+                    </div>
+            
+                    <div class="mt-4 bg-blue-300 flex items-center justify-between">
+                        <div class="flex items-center">
+                            <i class="fa-brands fa-facebook text-4xl text-white py-2 pl-2 rounded-none h-full"></i>
+                            <p class="text-blue-700 font-semibold ml-4">2M like</p>
+                        </div>
+                        <a href="#" class="bg-blue-500 text-white mr-4 py-1 px-4 rounded-xl">like</a>
+                    </div>
+            
+                    <div class="mt-4 bg-red-300 flex items-center justify-between">
+                        <div class="flex items-center">
+                            <i class="fa-brands fa-youtube text-4xl text-white py-2 pl-2 rounded-none h-full"></i>
+                            <p class="text-red-700 font-semibold ml-4">1M Subs</p>
+                        </div>
+                        <a href="#" class="bg-red-500 text-white mr-4 py-1 px-4 rounded-xl">subscribe</a>
+                    </div>
+            
+                    <div class="mt-4 bg-indigo-300 flex items-center justify-between">
+                        <div class="flex items-center">
+                            <i class="fa-brands fa-linkedin text-4xl text-white py-2 pl-2 rounded-none h-full"></i>
+                            <p class="text-indigo-600 font-semibold ml-4">70k followers</p>
+                        </div>
+                        <a href="#" class="bg-indigo-600 text-white mr-4 py-1 px-4 rounded-xl">follow</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white rounded-xl p-4">
+        <div>
+            <h1 class="font-bold text-3xl capitalize">projects</h1>
+            <div class="mt-4 overflow-x-auto">
+                <table class="capitalize text-start border-2 border-collapse min-w-[1000px] xx:min-w-full border-spacing-0">
+                    <thead>
+                        <tr class="bg-gray-200 border-2">
+                            <th class="p-4 border-2">name</th>
+                            <th class="p-4">finish date</th>
+                            <th class="p-4">client</th>
+                            <th class="p-4">price</th>
+                            <th class="p-4">team</th>
+                            <th class="p-4">status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b-2">
+                            <td class="p-4 border-x-2">ministry wikipedia</td>
+                            <td class="p-4">10 may 2022</td>
+                            <td class="p-4 border-x-2">ministry</td>
+                            <td class="p-4">$5300</td>
+                            <td class="flex items-center p-6 border-x-2">
+                            <img src="../image/avatar-01.png" alt="image" class="w-[2rem] rounded-full border-2 border-white">
+                            <img src="../image/avatar-02.png" alt="image" class="relative -left-4 w-[2rem] rounded-full border-2 border-white">
+                            <img src="../image/avatar-03.png" alt="image" class="relative -left-8 w-[2rem] rounded-full border-2 border-white">
+                            <img src="../image/avatar-04.png" alt="image" class="relative -left-12 w-[2rem] rounded-full border-2 border-white">
+                            </td>
+                            <td class="p-4"><p class="text-white bg-orange-500 rounded-lg py-2 px-4 w-fit">pending</p></td>
+                        </tr>
+                        <tr class="border-b-2">
+                            <td class="p-4 border-x-2">osama shop</td>
+                            <td class="p-4">12 oct 2021</td>
+                            <td class="p-4 border-x-2">osama company</td>
+                            <td class="p-4">$1500</td>
+                            <td class="flex items-center p-6 border-x-2">
+                                <img src="../image/avatar-01.png" alt="image" class="w-[2rem] rounded-full border-2 border-white">
+                                <img src="../image/avatar-02.png" alt="image" class="relative -left-4 w-[2rem] rounded-full border-2 border-white">
+                                <img src="../image/avatar-03.png" alt="image" class="relative -left-8 w-[2rem] rounded-full border-2 border-white">
+                            </td>
+                            <td class="p-4"><p class="text-white bg-blue-500 rounded-lg py-2 px-4 w-fit text-center">in progress</p></td>
+                            </tr>
+                            <tr class="border-b-2">
+                            <td class="p-4 border-x-2">bouda shop</td>
+                            <td class="p-4">05 sep 2021</td>
+                            <td class="p-4 border-x-2">bouda</td>
+                            <td class="p-4">$800</td>
+                            <td class="flex items-center p-6 border-x-2">
+                                <img src="../image/avatar-01.png" alt="image" class="w-[2rem] rounded-full border-2 border-white">
+                                <img src="../image/avatar-02.png" alt="image" class="relative -left-4 w-[2rem] rounded-full border-2 border-white">
+                            </td>
+                            <td class="p-4"><p class="text-white bg-green-500 rounded-lg py-2 px-4 w-fit">completed</p></td>
+                            </tr>
+                            <tr class="border-b-2">
+                            <td class="p-4 border-x-2">mahmoud website</td>
+                            <td class="p-4">22 may 2021</td>
+                            <td class="p-4 border-x-2">mahmoud</td>
+                            <td class="p-4">$600</td>
+                            <td class="flex items-center p-6 border-x-2">
+                                <img src="../image/avatar-01.png" alt="image" class="w-[2rem] rounded-full border-2 border-white">
+                                <img src="../image/avatar-02.png" alt="image" class="relative -left-4 w-[2rem] rounded-full border-2 border-white">
+                            </td>
+                            <td class="p-4"><p class="text-white bg-green-500 rounded-lg py-2 px-4 w-fit">completed</p></td>
+                            </tr>
+                            <tr class="border-b-2">
+                            <td class="p-4 border-x-2">sayed website</td>
+                            <td class="p-4">24 may 2021</td>
+                            <td class="p-4 border-x-2">sayed</td>
+                            <td class="p-4">$300</td>
+                            <td class="flex items-center p-6 border-x-2">
+                                <img src="../image/avatar-01.png" alt="image" class="w-[2rem] rounded-full border-2 border-white">
+                                <img src="../image/avatar-02.png" alt="image" class="relative -left-4 w-[2rem] rounded-full border-2 border-white">
+                            </td>
+                            <td class="p-4"><p class="text-white bg-red-500 rounded-lg py-2 px-4 w-fit">rejected</p></td>
+                            </tr>
+                            <tr>
+                            <td class="p-4 border-x-2">arena application</td>
+                            <td class="p-4">10 mar 2021</td>
+                            <td class="p-4 border-x-2">arena company</td>
+                            <td class="p-4">$2600</td>
+                            <td class="flex items-center p-6 border-x-2">
+                                <img src="../image/avatar-01.png" alt="image" class="w-[2rem] rounded-full border-2 border-white">
+                                <img src="../image/avatar-02.png" alt="image" class="relative -left-4 w-[2rem] rounded-full border-2 border-white">
+                                <img src="../image/avatar-03.png" alt="image" class="relative -left-8 w-[2rem] rounded-full border-2 border-white">
+                                <img src="../image/avatar-04.png" alt="image" class="relative -left-12 w-[2rem] rounded-full border-2 border-white">
+                            </td>
+                            <td class="p-4"><p class="text-white bg-green-500 rounded-lg py-2 px-4 w-fit">completed</p></td>
+                            </tr>
+                    </tbody>
+                    </table>
+            </div>
+        </div>
+    </section>
+
+</section>
+</body>
+</html>
